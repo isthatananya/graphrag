@@ -6,10 +6,10 @@ from neo4j_graphrag.experimental.pipeline.kg_builder import SimpleKGPipeline
 # -------------------------------
 # 1. Connect to Neo4j Aura (or local)
 # -------------------------------
-url = "neo4j+s://neo4j.databases.neo4j.io"
+uri = "neo4j+s://neo4j.databases.neo4j.io"
 username = "neo4j"
 password = "CeI9fhJwGxoHvkOO0d8N6km0JGfI9ypPMVcBJlEE0_Q"
-driver = GraphDatabase.driver(url, auth=(username, password))
+driver = GraphDatabase.driver(uri, auth=(username, password))
 
 # -------------------------------
 # 2. Set up FREE Embedding model (HuggingFace)
